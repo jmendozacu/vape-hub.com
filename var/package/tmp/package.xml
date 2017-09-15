@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>N98_CustomerGroupCheckout</name>
+    <version>1.1.1</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Limit payment and shipping methods by customer groups.</summary>
+    <description>Limit payment and shipping methods by customer groups.</description>
+    <notes>Added PayPal support. / Magento &lt; 1.6 support package.</notes>
+    <authors><author><name>netz98 new media GmbH</name><user>netz98magento</user><email>magento@netz98.de</email></author></authors>
+    <date>2012-02-21</date>
+    <time>16:48:28</time>
+    <contents><target name="magecommunity"><dir name="N98"><dir name="CustomerGroupCheckout"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Form.php" hash="f76ae162889d6ee1f0555baa789ba5b5"/></dir></dir></dir></dir><dir name="Model"><dir name="Payment"><file name="Observer.php" hash="495c0b0d2576bd73be90b9749938e229"/></dir><dir name="Shipping"><file name="Shipping.php" hash="d9c7c780b9f6cef07253d4e22b243ae9"/></dir></dir><dir name="etc"><file name="config.xml" hash="3a59619b8705fb3e34b248c56398c9e7"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="N98_CustomerGroupCheckout.xml" hash="beb679c904ac77f41e42a80340fe9aae"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,98 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="footer-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="footer">
+					  <p id="back-top"><a href="#top"><span></span></a> </p>
+					  <div class="footer-cols-wrapper">
+						<div class="footer-col">			
+							<h4><?php echo $this->__('Information') ?></h4>
+							<div class="footer-col-content">
+								<?php echo $this->getChildHtml('cms_footer_links') ?>
+								<?php echo $this->getChildHtml('footer_links') ?>
+							</div>
+						</div>
+						<?php echo $this->getChildHtml('footer_list') ?>
+						<div class="footer-col-right">
+							<?php echo $this->getChildHtml('left.newsletter') ?>
+                            <!-- Begin MailChimp Signup Form -->
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                            <style type="text/css">
+                                #mc_embed_signup{background-color:transparent; clear:left; font:14px Arial,sans-serif; }
+                                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                            </style>
+                            <div id="mc_embed_signup">
+                                <form action="//vape-hub.us16.list-manage.com/subscribe/post?u=8531c7e8a70621d6d7b19a183&amp;id=aabf8d69a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <h3>Newsletter Signup</h3>
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                            </label>
+                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-FNAME">First Name </label>
+                                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-LNAME">Last Name </label>
+                                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                                        </div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8531c7e8a70621d6d7b19a183_aabf8d69a8" tabindex="-1" value=""></div>
+                                        <div class="-clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                            <!--End mc_embed_signup-->
+							Call us now <span class="phone">(208) 901-5888</span> 
+						</div>
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('facebook_fanbox')->toHtml() ?>
+						<div class="clear"></div>
+					  </div>
+					<div class="clear"></div>
+					<address><?php echo $this->getCopyright() ?></address>
+					<?php echo $this->getChildHtml('paypal.partner.right.logo'); ?>
+					<?php echo $this->getChildHtml('store_switcher') ?>
+					<?php $current_page = Mage::app()->getFrontController()->getRequest()->getRouteName(); 
+						if ($current_page == 'cms'):
+//							echo 'More Magento Tobacco Themes at <a rel="nofollow" href="http://www.templatemonster.com/category/tobacco-magento-themes/" target="_blank">TemplateMonster.com</a>';
+						endif;
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
