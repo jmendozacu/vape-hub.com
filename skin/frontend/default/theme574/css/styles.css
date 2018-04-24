@@ -3856,7 +3856,9 @@ tr.summary-details-excluded {
 .tt {
     display: block;
 }
-
+.slider-container .col-xs-12 {
+    padding: 0px;
+}
 .zoom-inner {
     width: 300px;
     margin-bottom: 10px;
