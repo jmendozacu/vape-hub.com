@@ -229,6 +229,7 @@ class Varien_File_Uploader
 
             $this->_afterSave($this->_result);
         }
+Mage::log();
 
         return $this->_result;
     }
