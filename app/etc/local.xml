@@ -41,8 +41,8 @@
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[root]]></username>
-                    <password><![CDATA[giznad0]]></password>
+                    <username><![CDATA[vape]]></username>
+                    <password><![CDATA[pX5OUw2MBCwZbrID]]></password>
                     <dbname><![CDATA[vape-magento]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
